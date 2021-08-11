@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fiuras.css" />
+    <title>Figuras geometricas | Curso practico de javascript</title>
+  </head>
+  <body>
+    <header>
+      <div class="Header__Description">
+        <img
+          src="/assets/icons8-diversidad-96.png"
+          alt="Icono figuras"
+          class="Description__logo"
+        />
+        <h1>Figuras geometricas</h1>
+      </div>
+      <p>Primer taller del curso practico de Javascript</p>
+    </header>
+
+    <main>
+      <section class="container">
+        <h2 class="title">Calcula el area de un Cuadrado</h2>
+
+        <form action="" class="form">
+          <label for="inputCuadrado"
+            >Escribe cuanto mide cada lado de tu cuadrado</label
+          >
+          <input type="number" id="inputCuadrado" />
+          <!-- Por defecto los botones dentro de la etique form toman el tipo de submit
+          Tenemos que indicar que sea del tipo button para evitar que se recargue la pagina -->
+          <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular Perimetro
+          </button>
+          <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular area
+          </button>
+        </form>
+
+        <div class="container__results">
+          <h3>Resultados</h3>
+
+          <div class="results">
+            <div class="resPerimetro" id="resPerimetro">
+              <h3>Perimetro:</h3>
+            </div>
+            <div class="resArea" id="resArea">
+              <h3>Area:</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./figuras.js"></script>
+  </body>
+</html>
